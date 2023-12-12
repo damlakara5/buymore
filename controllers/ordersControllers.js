@@ -32,8 +32,7 @@ exports.setOrders = async(req,res) => {
             console.log(error); // Failure
         });
 
-        console.log(x)
-        console.log(order)
+ 
 
         res.status(200).json({
             status: "success",

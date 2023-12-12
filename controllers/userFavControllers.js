@@ -12,7 +12,6 @@ exports.getFavs = async(req,res) => {
 
     const favs = await UserFav.find({ user: userId }).populate("product").select("-user -__v")
 
-    console.log(favs)
 
     res.status(200).json({
         status: "success",

@@ -88,7 +88,7 @@ exports.getCheckoutSession = async(req,res,next) => {
     exports.getRefund =  async (req, res) => {
         try {
             const refundId = req.params.refundId;
-            console.log(refundId)
+          
             const refund = await stripe.refunds.retrieve(refundId);
             res.json(refund);
         } catch (error) {

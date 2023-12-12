@@ -14,7 +14,8 @@ const signToken = (id) => {
 
 const createSendToken = (user,statusCode,req, res) => {
 
-    const token = signToken(user._id)
+    try{
+      const token = signToken(user._id)
     const cookieOptions =  {
       httpOnly: true,
       secure: false,
@@ -32,6 +33,13 @@ const createSendToken = (user,statusCode,req, res) => {
           user
         }
     })
+    }catch(e){
+      console.log(e)
+      res.status(401).json({
+        status: "failed",
+        message : e
+      })
+    }
   }
 
 exports.login = async(req,res,next) => {
