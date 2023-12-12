@@ -1,0 +1,103 @@
+ [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "name": "George Bluth",  
+            "photo": "https://reqres.in/img/faces/1-image.jpg",
+            "password": "test1234",
+            "phone" : "555 555 555"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "name": "Janet Weaver",
+            "photo": "https://reqres.in/img/faces/2-image.jpg",
+            "password": "test1234",
+            "phone" : "555 555 555",
+            "address" : {
+                "city": "Ankara",
+                "country" : "Turkey",
+                "adressTitle": "Home"
+            }
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "name":"Emma Wong" ,
+            "photo": "https://reqres.in/img/faces/3-image.jpg",
+            "password": "test1234",
+            "phone" : "555 555 555"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "name":"Eve Holt",
+            "photo": "https://reqres.in/img/faces/4-image.jpg",
+            "password": "test1234",
+            "phone" : "555 555 555"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "name": "Charles Morris",
+            "photo": "https://reqres.in/img/faces/5-image.jpg",
+            "password": "test1234",
+            "phone" : "555 555 555"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "name": "Tracey Ramos",
+            "photo": "https://reqres.in/img/faces/6-image.jpg",
+            "password": "test1234",
+            "phone" : "555 555 555"
+        },
+        {
+            "id": 7,
+            "email": "michael.lawson@reqres.in",
+            "name": "Michael Lawson" ,
+            "photo": "https://reqres.in/img/faces/7-image.jpg",
+            "password": "test1234",
+            "phone" : "555 555 555"
+        },
+        {
+            "id": 8,
+            "email": "lindsay.ferguson@reqres.in",
+            "name": "Lindsay Ferguson",
+            "photo": "https://reqres.in/img/faces/8-image.jpg",
+            "password": "test1234",
+            "phone" : "555 555 555"
+        },
+        {
+            "id": 9,
+            "email": "tobias.funke@reqres.in",
+            "name": "Tobias Funke",
+            "photo": "https://reqres.in/img/faces/9-image.jpg",
+            "password": "test1234",
+            "phone" : "555 555 555"
+        },
+        {
+            "id": 10,
+            "email": "byron.fields@reqres.in",
+            "name":"Byron Fields",
+            "photo": "https://reqres.in/img/faces/10-image.jpg",
+            "password": "test1234",
+            "phone" : "555 555 555"
+        },
+        {
+            "id": 11,
+            "email": "george.edwards@reqres.in",
+            "name":"George Edwards" ,
+            "photo": "https://reqres.in/img/faces/11-image.jpg",
+            "password": "test1234",
+            "phone" : "555 555 555"
+        },
+        {
+            "id": 12,
+            "email": "rachel.howell@reqres.in",
+            "name":  "Rachel Howell",
+            "photo": "https://reqres.in/img/faces/12-image.jpg",
+            "password": "test1234",
+            "phone" : "555 555 555"
+        }
+]
