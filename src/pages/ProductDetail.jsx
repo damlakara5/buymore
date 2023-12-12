@@ -92,7 +92,7 @@ function ProductDetail() {
                 <p className="text-start mt-5 text-gray-600"> {product.description} </p>
                 <p className="text-start text-4xl my-5 font-semibold"> {product.price}$ </p>
 
-                <SizeBoxWrapper selectedSize={selectedSize} setSelectedSize={setSelectedSize} sizeOptions={sizeOptions} sizes={product.sizes} />
+                <SizeBoxWrapper className="p-4" selectedSize={selectedSize} setSelectedSize={setSelectedSize} sizeOptions={sizeOptions} sizes={product.sizes} />
                 <ColorBoxWrapper selectedColor={selectedColor} setSelectedColor={setSelectedColor} product={product} />
                 <div className="flex items-center mt-10 gap-5">
                     <button onClick={() => dispatch(addCart({product, size: selectedSize || product.sizes[0], color: selectedColor || product.sizes[0]}))} className="bg-blue-600 text-white w-full "> {buttonText} </button>

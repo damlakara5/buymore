@@ -59,7 +59,7 @@ const FiltersWrapper = ({className}) => {
       <div className="flex items-center gap-3">
             <p className="text-sm">0</p>
             <input 
-            className="sm:w-auto w-1/2 "
+            className="md:w-auto w-1/2 "
             type="range" 
             min="0"
             max={MAX}
@@ -121,7 +121,7 @@ const FiltersWrapper = ({className}) => {
         <FilterCheckbox label="1 and up" />
         
         <h2 className="font-semibold text-sm sm:text-lg my-4 filter-header">Size</h2>
-        <SizeBoxWrapper  setSelectedSize={handleSizeFilter}   sizeOptions={sizeOptions} sizes={sizes}/>
+        <SizeBoxWrapper className="px-2 py-1" setSelectedSize={handleSizeFilter}   sizeOptions={sizeOptions} sizes={sizes}/>
 
         <div className="mt-10"></div>
         <FilterCheckbox label="Has Discount" filterType="discount" />

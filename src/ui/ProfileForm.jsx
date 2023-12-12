@@ -12,7 +12,7 @@ function ProfileForm({header , data, handleSubmit}) {
                 {
                     data.map(el => <ProfileFormInput key={el.name} value={el.value} onChangeHandler={el.onChangeHandler} label={el.label} />)
                 }
-                <button className='border-2 border-blue-600'>Update</button>
+                <button className='border-[1px] border-blue-600'>Update</button>
             </form>
         </div>
     )

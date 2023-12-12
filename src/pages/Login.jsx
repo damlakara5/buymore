@@ -12,18 +12,17 @@ function Login() {
     const [email, setEmail] = useState()
     const [error, setError] = useState()
     const [password, setPassword] = useState()
-    const [passwordConfirm, setPasswordConfirm] = useState()
     const loading = useSelector(state => state.auth.loading)
 
     const handleLogin = (e) => {
         e.preventDefault()
 
 
-        if(!email || !password || !passwordConfirm){
+        if(!email || !password ){
             setError("Please provide all the n")
         }
 
-        dispatch(authLogin({email, password, passwordConfirm}))
+        dispatch(authLogin({email, password}))
             .unwrap()
             .then(() => navigate('/'))
             .catch((error) => {
@@ -53,10 +52,6 @@ function Login() {
                     <label className="flex flex-col text-start">
                         Password
                         <input minLength={8} required className="border outline-none rounded-2xl px-4 py-1" type="password" value={password} onChange={e => setPassword(e.target.value)}  placeholder="Password" />
-                    </label>
-                    <label className="flex flex-col text-start">
-                        Password Confirm
-                        <input minLength={8}  required className="border outline-none rounded-2xl px-4 py-1" type="password" value={passwordConfirm} onChange={e => setPasswordConfirm(e.target.value)} placeholder="Password Confirm" />
                     </label>
                     <button type="submit" className="bg-blue-500 outline-0 text-white" > {loading === "pending" ? "Logging in" : "Log In"} </button>
                 {error && <p className="bg-red-200 text-red-600 px-3 py-1 rounded-md mt-8"> {error} </p>}

@@ -77,7 +77,7 @@ const Overview = () => {
             <div className="relative">
                 <img className=" object-contain  h-80 w-full" src={apple} />
                 <h2 className="text-xl font-bold absolute text-black top-0 "> 
-                    <Link className="animated-hover text-slate-800 animated-hover_black hover:text-black">Apple Products</Link>
+                    <Link to="products?category=electronics" className="animated-hover text-slate-800 animated-hover_black hover:text-black">Apple Products</Link>
                 </h2>
                 <p className="absolute top-10">Mac, watches, Aplle TV and more</p>
             </div>

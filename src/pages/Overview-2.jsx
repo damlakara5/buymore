@@ -26,7 +26,7 @@ const Overview2 = () => {
             <div className="absolute ms-3 sm:ms-20 top-0 left-0 right-0 bottom-0 flex flex-col items-start  justify-center">
                 <h1 className="text-white mb-3 sm:text-center text-start"> IPHONE 12 PRO MAX </h1>
                 <p className="text-white sm:text-xl w-1/2 mb-4 text-start">The pro camera system takes low-light photography to the next level - with an even bigger  jump on iPhone 12 Pro Max.</p>
-                <button>View More</button>
+                <Link to="products?category=electronics"><button>View More</button></Link>
             </div>
         </div>
 
@@ -53,7 +53,7 @@ const Overview2 = () => {
                 <img className="rounded-3xl md:w-auto w-full object-cover h-full" src={shoe} />
             </div>
             <div className="relative rounded-3xl   ">
-                <h2 className="text-xl font-bold absolute left-10 text-black top-10 "> 
+                <h2 className="text-xl font-bold absolute left-1 text-black top-8 "> 
                     <Link to={`/products?category=men`} className="animated-hover text-slate-800 animated-hover_black hover:text-black">Men Collection</Link>
                 </h2>
                 <img className="h-full md:w-auto w-full rounded-3xl object-cover" src={menCollection} />

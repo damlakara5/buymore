@@ -89,7 +89,7 @@ input[type='range']::-webkit-slider-runnable-track {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .search-input::placeholder {
         font-size: 10px;
     }

@@ -23,7 +23,7 @@ function Favs() {
     if(status === "failed") return <p className="col-span-3"> {message} </p>
     if(favs.length === 0) return (
         <div className="col-span-3 text-start">
-            <p className=" mt-10 text-slate-700 font-semibold block">You haven`t added any products to your wishlist yet.Discpver our products. </p>
+            <p className=" mt-10 text-slate-700 font-semibold block">You haven`t added any products to your wishlist yet.Discover our products. </p>
             <Link className="animated-hover text-lg font-semibold cursor-pointer" to="/products" >Discover</Link> 
         </div>
     )

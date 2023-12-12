@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux"
-import { BsCart2, BsPerson, BsHeart,BsArrowReturnRight, BsEnvelope, BsTicketPerforated} from "react-icons/bs";
+import { BsCart2, BsPerson, BsHeart,BsArrowReturnRight, BsEnvelope} from "react-icons/bs";
 import "./Sidebar.css"
 import SidebarItem from "./SidebarItem";
 
@@ -19,7 +19,6 @@ function Sidebar() {
                 <SidebarItem icon={<BsPerson />} text="My Profile" to="/profile/me" />
                 <SidebarItem icon={<BsCart2 />} text="My Orders" to="/profile/orders" />
                 <SidebarItem icon={<BsHeart />} text="Wishlist" to="/profile/wishlist" />
-                <SidebarItem icon={<BsTicketPerforated />} text="Discount Coupons" to="/profile/wishlist" />
                 <SidebarItem icon={<BsArrowReturnRight />} text="Logout" to="/login" />
                  
             </ul>
