@@ -4,10 +4,10 @@ import "./Sidebar.css"
 import SidebarItem from "./SidebarItem";
 
 function Sidebar() {
-    const user = useSelector(state => state.auth.user)
+    const userData = useSelector(state => state.auth.user)
+    
 
-    const userData = JSON.parse(user)
-
+   
     return (
         <div className="">
             <div className="flex flex-col items-center">

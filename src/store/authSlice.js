@@ -1,7 +1,10 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
+const userFromLocalStorage = localStorage.getItem("user");
+const initialUserState = userFromLocalStorage ? JSON.parse(userFromLocalStorage) : {};
+
 const initialState = {
-    user: localStorage.getItem("user") || {},
+    user: initialUserState,
     loading: 'idle' | 'pending' | 'succeeded' | 'failed'
 }
 

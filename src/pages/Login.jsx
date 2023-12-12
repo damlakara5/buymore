@@ -44,7 +44,7 @@ function Login() {
                     <div className="sm:w-14 w-10 ms-3 h-1 border-t-2 border-gray-400 "></div>
 
                 </div>
-                <form className=" flex flex-col gap-5 w-3/4 sm:w-1/2 me-auto" onSubmit={handleLogin}>
+                <form className=" flex flex-col gap-5 w-3/4 sm:w-full me-auto" onSubmit={handleLogin}>
                     <label className="flex flex-col text-start ">
                         Email
                         <input  required className="border outline-none rounded-2xl px-4 py-1" type="text" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" />

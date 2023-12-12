@@ -10,7 +10,7 @@ function Slider({slides}) {
     return (
         <div className="slider flex items-center  col-span-2 ms-8 ">
             <button   className={` px-0 sm:px-2 max-h-11 flex items-center ${isFirstSlide && "hidden"} `} onClick={goToPreviousSlides}><BsArrowLeftCircleFill className='sm:w-8 h-8 ' /></button>
-            <div className="slide flex gap-3" >
+            <div className="slide flex gap-2" >
                 {slidesToDisplay.map(slide => (
                     <ProductCart product={slide} key={slide.id} />
                 ))}

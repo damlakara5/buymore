@@ -48,7 +48,7 @@ function ProductCart({product, isFavedList}) {
             <p className={`font-bold   ${!newPrice && "my-4 text-lg "}  ${newPrice && "line-through"} `}> { product.price}$ </p>
            { newPrice &&  <p className='text-red-600 font-extrabold text-lg flex items-center justify-center'> <HiArrowTrendingDown /> {newPrice?.toFixed(2)} </p>}
         </NavLink>
-            <button className='border border-sky-800 rounded-xl text-sky-900 p-1 sm:text-base text-sm sm:px-3  ' onClick={() => dispatch(addCart({product,size: product.sizes[0]} ))} >Add to Cart</button>
+            <button className='border border-blue-500 rounded-xl text-blue-900 p-1 sm:text-base text-sm sm:px-3  ' onClick={() => dispatch(addCart({product,size: product.sizes[0]} ))} >Add to Cart</button>
         </div>
     )
 }

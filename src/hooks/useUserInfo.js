@@ -3,8 +3,8 @@ import { updateUserInfo } from "../store/authSlice"
 import { useDispatch, useSelector } from "react-redux"
 
 export const useUserInfo = () => {
-    const user = useSelector(state => state.auth.user)
-    const userData = JSON.parse(user)
+    const userData = useSelector(state => state.auth.user)
+  
     const dispatch = useDispatch()
     const [name, setName] = useState(userData.name)
     const [email, setEmail] = useState(userData.email)
