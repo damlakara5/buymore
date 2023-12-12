@@ -48,6 +48,7 @@ exports.login = async(req,res,next) => {
 
       createSendToken(user, 200, req,res)
    }catch(e) {
+    console.log(e)
       res.status(401).json({
         status: "failed",
         message: e

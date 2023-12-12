@@ -12,7 +12,7 @@
       "reviews": [],
       "category": ["Men","shoes"],
       "discount": "",
-      "images": ["http://localhost:3000/img/shoe-1.jpg","http://localhost:3000/img/shoe-1-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/shoe-1.jpg","https://buymore-lzh0.onrender.com/img/shoe-1-2.jpg"]
     },
     {
       "name" :"Air Max 95 Essential",
@@ -26,7 +26,7 @@
       "reviews": [],
       "category": ["Men","shoes"],
       "discount": "",
-      "images": ["http://localhost:3000/img/shoe-2.jpg","http://localhost:3000/img/shoe-2-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/shoe-2.jpg","https://buymore-lzh0.onrender.com/img/shoe-2-2.jpg"]
     },
     {
       "name" :"Authentic Platform Trainer ",
@@ -40,7 +40,7 @@
       "reviews": [],
       "category": ["women","shoes"],
       "discount": "",
-      "images": ["http://localhost:3000/img/shoe-3.jpg","http://localhost:3000/img/shoe-3-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/shoe-3.jpg","https://buymore-lzh0.onrender.com/img/shoe-3-2.jpg"]
     },
     {
       "name" :"Cali Trainer",
@@ -54,7 +54,7 @@
       "reviews": [],
       "category": ["women","shoes"],
       "discount": "",
-      "images": ["http://localhost:3000/img/shoe-4.jpg","http://localhost:3000/img/shoe-4-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/shoe-4.jpg","https://buymore-lzh0.onrender.com/img/shoe-4-2.jpg"]
     },
     {
       "name" :"Deerupt Runner",
@@ -68,7 +68,7 @@
       "reviews": [],
       "category": ["men","shoes"],
       "discount": "",
-      "images": ["http://localhost:3000/img/shoe-5.jpg","http://localhost:3000/img/shoe-5-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/shoe-5.jpg","https://buymore-lzh0.onrender.com/img/shoe-5-2.jpg"]
     },
     {
       "name" :"M2K Tekno Trainer ",
@@ -82,7 +82,7 @@
       "reviews": [],
       "category": ["women","shoes"],
       "discount": "",
-      "images": ["http://localhost:3000/img/shoe-6.jpg","http://localhost:3000/img/shoe-6-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/shoe-6.jpg","https://buymore-lzh0.onrender.com/img/shoe-6-2.jpg"]
     },
     {
       "name" :"Nike Lunar Force 1 Duckboot",
@@ -96,7 +96,7 @@
       "reviews": [],
       "category": ["men","shoes"],
       "discount": "",
-      "images": ["http://localhost:3000/img/shoe-7.jpg","http://localhost:3000/img/shoe-7-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/shoe-7.jpg","https://buymore-lzh0.onrender.com/img/shoe-7-2.jpg"]
     },
     {
       "name" :"RS-0 Toys OLD",
@@ -110,7 +110,7 @@
       "reviews": [],
       "category": ["men","shoes"],
       "discount": "",
-      "images": ["http://localhost:3000/img/shoe-8.jpg","http://localhost:3000/img/shoe-8-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/shoe-8.jpg","https://buymore-lzh0.onrender.com/img/shoe-8-2.jpg"]
     },
     {
       "name" :"Samba Rose Traine",
@@ -124,7 +124,7 @@
       "reviews": [],
       "category": ["women","shoes"],
       "discount": "",
-      "images": ["http://localhost:3000/img/shoe-9.jpg","http://localhost:3000/img/shoe-9-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/shoe-9.jpg","https://buymore-lzh0.onrender.com/img/shoe-9-2.jpg"]
     },
     {
       "name" :"Yung 96 Trainer",
@@ -138,7 +138,7 @@
       "reviews": [],
       "category": ["women","shoes"],
       "discount": "",
-      "images": ["http://localhost:3000/img/shoe-10.jpg","http://localhost:3000/img/shoe-10-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/shoe-10.jpg","https://buymore-lzh0.onrender.com/img/shoe-10-2.jpg"]
     },
     {
       "name" :"Aster Backpack",
@@ -152,7 +152,7 @@
       "reviews": [],
       "category": ["women","child","bag"],
       "discount": "",
-      "images": ["http://localhost:3000/img/bag-1.jpg","http://localhost:3000/img/bag-1-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/bag-1.jpg","https://buymore-lzh0.onrender.com/img/bag-1-2.jpg"]
     },
     {
       "name" :"Coast Bag",
@@ -166,7 +166,7 @@
       "reviews": [],
       "category": ["women","bag"],
       "discount": "",
-      "images": ["http://localhost:3000/img/bag-2.jpg","http://localhost:3000/img/bag-2-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/bag-2.jpg","https://buymore-lzh0.onrender.com/img/bag-2-2.jpg"]
     },
     {
       "name" :"Blue Bag",
@@ -180,7 +180,7 @@
       "reviews": [],
       "category": ["women","bag"],
       "discount": "",
-      "images": ["http://localhost:3000/img/bag-3.jpg","http://localhost:3000/img/bag-3-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/bag-3.jpg","https://buymore-lzh0.onrender.com/img/bag-3-2.jpg"]
     },
     {
       "name" :"Charm 14k Gold 1/12ct Diamond Anniversary Band Ring",
@@ -194,7 +194,7 @@
       "reviews": [],
       "category": ["women","jewelery"],
       "discount": "",
-      "images": ["http://localhost:3000/img/jewelery-1.jpg","http://localhost:3000/img/jewelery-1-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/jewelery-1.jpg","https://buymore-lzh0.onrender.com/img/jewelery-1-2.jpg"]
     },
     {
       "name" :"Engagement Ring Diamonds 14K White Gold",
@@ -208,7 +208,7 @@
       "reviews": [],
       "category": ["women","jewelery"],
       "discount": "",
-      "images": ["http://localhost:3000/img/jewelery-2.jpg","http://localhost:3000/img/jewelery-2-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/jewelery-2.jpg","https://buymore-lzh0.onrender.com/img/jewelery-2-2.jpg"]
     },
     {
       "name" :"Miadora 10k Rose Gold Morganite and Diamond Accent Ring",
@@ -222,7 +222,7 @@
       "reviews": [],
       "category": ["women","jewelery"],
       "discount": "10",
-      "images": ["http://localhost:3000/img/jewelery-3.jpg","http://localhost:3000/img/jewelery-3-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/jewelery-3.jpg","https://buymore-lzh0.onrender.com/img/jewelery-3-2.jpg"]
     },
     {
       "name" :"Princess-Cut Diamond Stud Earrings 10K Gold",
@@ -236,7 +236,7 @@
       "reviews": [],
       "category": ["women","jewelery"],
       "discount": "10",
-      "images": ["http://localhost:3000/img/jewelery-4.jpg","http://localhost:3000/img/jewelery-4-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/jewelery-4.jpg","https://buymore-lzh0.onrender.com/img/jewelery-4-2.jpg"]
     },
     {
       "name" :"Loopt Rose Pink Coat",
@@ -250,7 +250,7 @@
       "reviews": [],
       "category": ["women","men", "glasses"],
       "discount": "",
-      "images": ["http://localhost:3000/img/glasses-1.png","http://localhost:3000/img/glasses-1-2.png"]
+      "images": ["https://buymore-lzh0.onrender.com/img/glasses-1.png","https://buymore-lzh0.onrender.com/img/glasses-1-2.png"]
     },
     {
       "name" :"DAIKON Sunglasses Men",
@@ -264,7 +264,7 @@
       "reviews": [],
       "category": ["men", "glasses"],
       "discount": "",
-      "images": ["http://localhost:3000/img/glasses-2.jpg","http://localhost:3000/img/glasses-2-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/glasses-2.jpg","https://buymore-lzh0.onrender.com/img/glasses-2-2.jpg"]
     },
     {
       "name" :"13-inch MacBook Air",
@@ -278,7 +278,7 @@
       "reviews": [],
       "category": ["electronic", "apple"],
       "discount": "",
-      "images": ["http://localhost:3000/img/macbook-air.png","http://localhost:3000/img/macbook-air-2.png","http://localhost:3000/img/macbook-air-3.png"]
+      "images": ["https://buymore-lzh0.onrender.com/img/macbook-air.png","https://buymore-lzh0.onrender.com/img/macbook-air-2.png","https://buymore-lzh0.onrender.com/img/macbook-air-3.png"]
     },
     {
       "name" :"14‑inch MacBook Pro",
@@ -292,7 +292,7 @@
       "reviews": [],
       "category": ["electronic", "apple"],
       "discount": "",
-      "images": ["http://localhost:3000/img/macbook-pro.png","http://localhost:3000/img/macbook-pro-2.png"]
+      "images": ["https://buymore-lzh0.onrender.com/img/macbook-pro.png","https://buymore-lzh0.onrender.com/img/macbook-pro-2.png"]
     },
     {
       "name" :"24‑inch iMac with Apple",
@@ -306,7 +306,7 @@
       "reviews": [],
       "category": ["electronic", "apple"],
       "discount": "",
-      "images": ["http://localhost:3000/img/imac.png","http://localhost:3000/img/imac-2.png"]
+      "images": ["https://buymore-lzh0.onrender.com/img/imac.png","https://buymore-lzh0.onrender.com/img/imac-2.png"]
     },
     {
       "name" :"34” Ultra WQHD Monitor",
@@ -320,7 +320,7 @@
       "reviews": [],
       "category": ["electronic", "apple"],
       "discount": "",
-      "images": ["http://localhost:3000/img/ultra-hd.png","http://localhost:3000/img/ultra-hd-2.png"]
+      "images": ["https://buymore-lzh0.onrender.com/img/ultra-hd.png","https://buymore-lzh0.onrender.com/img/ultra-hd-2.png"]
     },
     {
       "name" :"Apple Airpods",
@@ -334,7 +334,7 @@
       "reviews": [],
       "category": ["electronic", "apple"],
       "discount": "",
-      "images": ["http://localhost:3000/img/airpods.png","http://localhost:3000/img/airpods-2.png","http://localhost:3000/img/airpods-3.png"]
+      "images": ["https://buymore-lzh0.onrender.com/img/airpods.png","https://buymore-lzh0.onrender.com/img/airpods-2.png","https://buymore-lzh0.onrender.com/img/airpods-3.png"]
     },
     {
       "name" :"MILLENIUM Matte Black Sunglasses",
@@ -348,7 +348,7 @@
       "reviews": [],
       "category": ["women", "glasses"],
       "discount": "",
-      "images": ["http://localhost:3000/img/glasses-3.jpg","http://localhost:3000/img/glasses-3-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/glasses-3.jpg","https://buymore-lzh0.onrender.com/img/glasses-3-2.jpg"]
     },
     {
       "name" :"PALO ALTO Golden Eyeglasses",
@@ -362,7 +362,7 @@
       "reviews": [],
       "category": ["men", "glasses"],
       "discount": "",
-      "images": ["http://localhost:3000/img/glasses-4.jpg","http://localhost:3000/img/glasses-4-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/glasses-4.jpg","https://buymore-lzh0.onrender.com/img/glasses-4-2.jpg"]
     },
     {
       "name" :"Brown Stirped Eyeglasses",
@@ -376,7 +376,7 @@
       "reviews": [],
       "category": ["men", "women", "glasses"],
       "discount": "",
-      "images": ["http://localhost:3000/img/glasses-5.jpg","http://localhost:3000/img/glasses-5-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/glasses-5.jpg","https://buymore-lzh0.onrender.com/img/glasses-5-2.jpg"]
     },
     {
       "name" :"Brown Stirped Eyeglasses",
@@ -390,7 +390,7 @@
       "reviews": [],
       "category": ["women","men", "glasses"],
       "discount": "10",
-      "images": ["http://localhost:3000/img/glasses-5.jpg","http://localhost:3000/img/glasses-5-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/glasses-5.jpg","https://buymore-lzh0.onrender.com/img/glasses-5-2.jpg"]
     },
     {
       "name" :"Yellow Diamond Ring",
@@ -404,7 +404,7 @@
       "reviews": [],
       "category": ["women","jewelery","ring"],
       "discount": "10",
-      "images": ["http://localhost:3000/img/jewelery-5.jpg","http://localhost:3000/img/jewelery-5-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/jewelery-5.jpg","https://buymore-lzh0.onrender.com/img/jewelery-5-2.jpg"]
     },
     {
       "name" :"CITRINE RING",
@@ -418,7 +418,7 @@
       "reviews": [],
       "category": ["women","jewelery","ring"],
       "discount": "10",
-      "images": ["http://localhost:3000/img/jewelery-6.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/jewelery-6.jpg"]
     },
     {
       "name" :"CITRINE RING",
@@ -432,7 +432,7 @@
       "reviews": [],
       "category": ["women","jewelery","ring"],
       "discount": "10",
-      "images": ["http://localhost:3000/img/jewelery-7.jpg","http://localhost:3000/img/jewelery-7-2.jpg"]
+      "images": ["https://buymore-lzh0.onrender.com/img/jewelery-7.jpg","https://buymore-lzh0.onrender.com/img/jewelery-7-2.jpg"]
     },
       {
         "name": "Men's Casual Shirt",
@@ -458,7 +458,7 @@
         "rate": 4.5,
         "colors": ["brown", "white"],
         "discount": 10,
-        "images": ["http://localhost:3000/img/men-casual-shirt.webp", "http://localhost:3000/img/men-casual-shirt-2.webp"]
+        "images": ["https://buymore-lzh0.onrender.com/img/men-casual-shirt.webp", "https://buymore-lzh0.onrender.com/img/men-casual-shirt-2.webp"]
       },
       {
         "name": "Women's Running Shoes",
@@ -484,7 +484,7 @@
         "rate": 4.0,
         "colors": ["white", "pink"],
         "discount": 15,
-        "images": ["http://localhost:3000/img/women-run-shoe.webp"]
+        "images": ["https://buymore-lzh0.onrender.com/img/women-run-shoe.webp"]
       },
       {
         "name": "Smart Home Thermostat",
@@ -498,7 +498,7 @@
         "category": ["electronics", "home"],
         "rate": 0,
         "colors": ["white"],
-        "images": ["http://localhost:3000/img/thermostat.webp","http://localhost:3000/img/thermostat.webp"]
+        "images": ["https://buymore-lzh0.onrender.com/img/thermostat.webp","https://buymore-lzh0.onrender.com/img/thermostat.webp"]
       },
       {
         "name": "Smart LED TV",
@@ -524,7 +524,7 @@
         "rate": 4.5,
         "colors": ["black"],
         "discount": 20,
-        "images": ["http://localhost:3000/img/smart-led-tv.webp"]
+        "images": ["https://buymore-lzh0.onrender.com/img/smart-led-tv.webp"]
       },
       {
         "name": "Children's Toy Set",
@@ -550,7 +550,7 @@
         "rate": 4.0,
         "colors": ["multicolor"],
         "discount": 5,
-        "images": ["http://localhost:3000/img/children-toy-set.webp", "http://localhost:3000/img/children-toy-set-2.webp"]
+        "images": ["https://buymore-lzh0.onrender.com/img/children-toy-set.webp", "https://buymore-lzh0.onrender.com/img/children-toy-set-2.webp"]
       },
       {
         "name": "Kitchen Blender",
@@ -576,7 +576,7 @@
         "rate": 4.5,
         "colors": ["white"],
         "discount": 10,
-        "images": ["http://localhost:3000/img/kitchen-blender.webp"]
+        "images": ["https://buymore-lzh0.onrender.com/img/kitchen-blender.webp"]
       },
       {
         "name": "65-Inch 4K Smart TV",
@@ -595,9 +595,9 @@
         "colors": ["black"],
         "discount": 20,
         "images": [
-          "http://localhost:3000/img/4k-smart-tv.webp",
-          "http://localhost:3000/img/4k-smart-tv-2.webp",
-          "http://localhost:3000/img/4k-smart-tv-3.webp"
+          "https://buymore-lzh0.onrender.com/img/4k-smart-tv.webp",
+          "https://buymore-lzh0.onrender.com/img/4k-smart-tv-2.webp",
+          "https://buymore-lzh0.onrender.com/img/4k-smart-tv-3.webp"
         ]
       },
       {
@@ -617,9 +617,9 @@
         "colors": ["blue", "pink"],
         "discount": 15,
         "images": [
-          "http://localhost:3000/img/women-running-shoe.webp",
-          "http://localhost:3000/img/women-running-shoe-2.webp",
-          "http://localhost:3000/img/women-running-shoe-3.webp"
+          "https://buymore-lzh0.onrender.com/img/women-running-shoe.webp",
+          "https://buymore-lzh0.onrender.com/img/women-running-shoe-2.webp",
+          "https://buymore-lzh0.onrender.com/img/women-running-shoe-3.webp"
         ]
       },
       {
@@ -634,7 +634,7 @@
         "category": ["electronics", "audio"],
         "rate": 0,
         "colors": ["black"],
-        "images": ["http://localhost:3000/img/bluetoth-wirelass-earbuds-1.webp", "http://localhost:3000/img/bluetoth-wirelass-earbuds-1.webp"]
+        "images": ["https://buymore-lzh0.onrender.com/img/bluetoth-wirelass-earbuds-1.webp", "https://buymore-lzh0.onrender.com/img/bluetoth-wirelass-earbuds-1.webp"]
       },
       {
         "name": "Women's Sweater",
@@ -648,7 +648,7 @@
         "category": ["women", "sweaters"],
         "rate": 0,
         "colors": ["beige"],
-        "images": ["http://localhost:3000/img/women-sweater.webp", "http://localhost:3000/img/women-sweater.webp"]
+        "images": ["https://buymore-lzh0.onrender.com/img/women-sweater.webp", "https://buymore-lzh0.onrender.com/img/women-sweater.webp"]
       },
       {
         "name": "Men's Casual Pants",
@@ -662,7 +662,7 @@
         "category": ["men", "pants"],
         "rate": 0,
         "colors": ["gray"],
-        "images": ["http://localhost:3000/img/men-pants.webp","http://localhost:3000/img/men-pants-2.webp","http://localhost:3000/img/men-pants-3.webp"]
+        "images": ["https://buymore-lzh0.onrender.com/img/men-pants.webp","https://buymore-lzh0.onrender.com/img/men-pants-2.webp","https://buymore-lzh0.onrender.com/img/men-pants-3.webp"]
       },
       {
         "name": "Home Security Camera",
@@ -679,7 +679,7 @@
         "rate": 4,
         "colors": ["white"],
         "discount": 10,
-        "images": ["http://localhost:3000/img/home-secuirty-camera.webp", "http://localhost:3000/img/home-secuirty-camera.webp"]
+        "images": ["https://buymore-lzh0.onrender.com/img/home-secuirty-camera.webp", "https://buymore-lzh0.onrender.com/img/home-secuirty-camera.webp"]
       },
       {
         "name": "Children's Toy Car",
@@ -694,7 +694,7 @@
         "rate": 0,
         "colors": ["red"],
         "discount": 5,
-        "images": ["http://localhost:3000/img/toy-car.webp","http://localhost:3000/img/toy-car-2.webp","http://localhost:3000/img/toy-car-3.webp"]
+        "images": ["https://buymore-lzh0.onrender.com/img/toy-car.webp","https://buymore-lzh0.onrender.com/img/toy-car-2.webp","https://buymore-lzh0.onrender.com/img/toy-car-3.webp"]
       },
       {
         "name": "LED Smart TV",
@@ -712,8 +712,8 @@
         "colors": ["black"],
         "discount": 15,
         "images": [
-          "http://localhost:3000/img/smart-tv-55.webp",
-          "http://localhost:3000/img/smart-tv-55-2.webp"
+          "https://buymore-lzh0.onrender.com/img/smart-tv-55.webp",
+          "https://buymore-lzh0.onrender.com/img/smart-tv-55-2.webp"
         ]
       },
       {
@@ -728,7 +728,7 @@
         "category": ["women", "shoes"],
         "rate": 0,
         "colors": ["white"],
-        "images": ["http://localhost:3000/img/white-sneaker.webp","http://localhost:3000/img/white-sneaker-2.webp", "http://localhost:3000/img/white-sneaker-3.webp"]
+        "images": ["https://buymore-lzh0.onrender.com/img/white-sneaker.webp","https://buymore-lzh0.onrender.com/img/white-sneaker-2.webp", "https://buymore-lzh0.onrender.com/img/white-sneaker-3.webp"]
       },
       {
         "name": "Men's Blue Plaid Shirt",
@@ -746,7 +746,7 @@
         "rate": 4.5,
         "colors": ["blue"],
         "discount": 10,
-        "images": ["http://localhost:3000/img/blue-shirt.webp","http://localhost:3000/img/blue-shirt-2.webp"]
+        "images": ["https://buymore-lzh0.onrender.com/img/blue-shirt.webp","https://buymore-lzh0.onrender.com/img/blue-shirt-2.webp"]
       }
      
     
