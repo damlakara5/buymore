@@ -1,0 +1,89 @@
+.app-layout{
+   /*  grid-template-columns: 13rem 1fr; */
+    grid-template-rows: 4rem 1fr;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+input[type='range'] {
+	-webkit-appearance: none;
+	height: 7px;
+	background: grey;
+	border-radius: 5px;
+	background-image: linear-gradient(rgb(89, 89, 250), rgb(89, 89, 250));
+	background-repeat: no-repeat;
+}
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: rgb(89, 89, 250);
+	cursor: pointer;
+	box-shadow: 0 0 2px 0 #555;
+}
+input[type='range']::-webkit-slider-runnable-track {
+	-webkit-appearance: none;
+	box-shadow: none;
+	border: none;
+	background: transparent;
+}
+
+
+.filter-label{
+	color: #666565;
+}
+
+.filter-header{
+	color: #4b5563;
+}
+
+.header{
+	box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.04);
+}
+
+.product-info{
+	color: #858585;
+}
+
+.reviews__star--active {
+	fill: rgb(224, 224, 14)
+}
+
+.reviews__star {
+	height: 1.5rem;
+	width: 1.5rem;
+	margin-right: 1px;
+  }
+
+.custom-font{
+	font-family: 'Merriweather', serif;
+}
+
+
+.animated-hover {
+    position: relative;
+    overflow: hidden; /* Ensures the line does not extend outside the element */
+}
+
+.animated-hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Adjust based on your preference */
+    width: 0;
+    height: 2px;
+    transition: width 0.3s ease-in-out;
+}
+
+.animated-hover_black::after{
+	background-color: black;
+}
+
+.animated-hover:hover::after {
+    width: 100%;
+}
+
+.image-container:hover img:first-child {
+    opacity: 0;
+}

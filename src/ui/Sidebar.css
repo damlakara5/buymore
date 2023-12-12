@@ -1,0 +1,19 @@
+.active-icon li div svg{
+    display: block;
+}
+
+.hide-icon li div svg{
+    display: none;
+}
+
+.nav-li svg{
+    width: 16px;
+    height: 16px;
+}
+
+@media (max-width: 400px) {
+    .nav-li svg {
+        width: 12px;
+        height: 12px;
+    }
+}

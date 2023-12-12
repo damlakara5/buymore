@@ -1,0 +1,23 @@
+.text-with-lines {
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .text-with-lines::before,
+  .text-with-lines::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 100px; /* Adjust the length of the line */
+    height: 2px; /* Adjust the thickness of the line */
+    background-color: black; /* Adjust the color of the line */
+  }
+  
+  .text-with-lines::before {
+    left: -110px; /* Adjust based on the length of the line */
+  }
+  
+  .text-with-lines::after {
+    right: -110px; /* Adjust based on the length of the line */
+  }
+  

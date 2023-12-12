@@ -1,0 +1,17 @@
+.diagonal-border-box {
+    position: relative; /* Needed for absolute positioning of the pseudo-element */
+    /* Add other styles for your div (width, height, etc.) */
+}
+
+.diagonal-border-box::before {
+    content: '';
+    position: absolute;
+    top: 0px; /* Negative of the padding value */
+    left: 0px; /* Negative of the padding value */
+    width: calc(100% + 20px); /* Adding double the padding value */
+    height: calc(100% + 20px); /* Adding double the padding value */
+    background: transparent;
+    border-top: 2px solid black;
+    transform: rotate(45deg);
+    transform-origin: 0 0;
+}
