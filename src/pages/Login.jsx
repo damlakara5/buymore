@@ -9,9 +9,9 @@ import { useNavigate } from "react-router-dom";
 function Login() {
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    const [email, setEmail] = useState()
+    const [email, setEmail] = useState("janet.weaver@reqres.in")
     const [error, setError] = useState()
-    const [password, setPassword] = useState()
+    const [password, setPassword] = useState("test1234")
     const loading = useSelector(state => state.auth.loading)
 
     const handleLogin = (e) => {
