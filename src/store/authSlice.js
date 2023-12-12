@@ -18,9 +18,19 @@ const authSlice = createSlice({
     },
     extraReducers: (builder)=> {
         builder.addCase(authLogin.fulfilled, (state,action) => {
+            
             localStorage.setItem("jwt", action.payload.token)
             localStorage.setItem("user", JSON.stringify(action.payload.data.user) )
             state.user = action.payload.data.user
+            state.loading = 'succeeded'
+
+        }),
+        builder.addCase(authLogin.pending, (state) => {
+            state.loading= "pending"
+        }),
+        builder.addCase(authLogin.rejected, (state,action) => {
+            console.log(action.error)
+            state.loading = 'failed'
 
         }),
         builder.addCase(updateUserInfo.fulfilled, (state,action) => {
@@ -37,20 +47,30 @@ const authSlice = createSlice({
 })
 
 
-export const authLogin = createAsyncThunk("auth/login", async(payload) => {
-    
-    const res = await fetch("https://buymore-lzh0.onrender.com/login", {
-        method: "POST",
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(payload)
-    })
-    const data = await res.json()
+export const authLogin = createAsyncThunk("auth/login", async(payload, { rejectWithValue }) => {
+    try {
+        const res = await fetch("https://buymore-lzh0.onrender.com/login", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        });
 
-    return data
+        if (!res.ok) {
+            // Handle non-2xx status codes
+            const errorDetail = await res.json();
+            throw new Error(` ${errorDetail.message}`);
+        }
 
-})
+        const data = await res.json();
+        return data;
+    } catch (error) {
+        console.error("Error in authLogin:", error);
+        return rejectWithValue(error.message);
+    }
+});
+
 
 export const updateUserInfo = createAsyncThunk("auth/updateUserInfo", async(payload) => {
     const res = await fetch("https://buymore-lzh0.onrender.com/user", {

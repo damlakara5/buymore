@@ -7,7 +7,7 @@ function FilterCheckbox({label, filterType}) {
 
 
     return (
-        <label className="gap-3 flex filter-label">
+        <label className="sm:gap-3 gap-1 flex filter-label text-xs">
                 <input type="checkbox" onChange={(e) => handleFilter(e, label)} />
                 {label}
         </label>

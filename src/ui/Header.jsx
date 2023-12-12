@@ -38,7 +38,7 @@ function Header() {
                 onChange={(e) => dispatch(setSearch(e.target.value))} 
                 onKeyDown={handleSearch}
                 value={search} 
-                className=" w-1/3 flex  border border-grey-600 outline-none rounded-md  ps-1 sm:px-3" 
+                className="search-input w-1/3 flex  border border-grey-600 outline-none rounded-md  ps-1 sm:px-3" 
                 placeholder="Please write the product, brand or category you are looking for." 
                 type="text"  
             />

@@ -87,3 +87,10 @@ input[type='range']::-webkit-slider-runnable-track {
 .image-container:hover img:first-child {
     opacity: 0;
 }
+
+
+@media (max-width: 500px) {
+    .search-input::placeholder {
+        font-size: 10px;
+    }
+}

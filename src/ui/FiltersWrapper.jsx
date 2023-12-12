@@ -4,8 +4,9 @@ import { useDispatch } from "react-redux";
 import { setFilter } from "../store/filtersSlice";
 import SizeBoxWrapper from "./SizeBoxWrapper";
 import useUpdateUrlWithFilter from "../hooks/useUpdateUrlWithFilter";
+import PropTypes from 'prop-types';
 
-const FiltersWrapper = () => {
+const FiltersWrapper = ({className}) => {
     const [value, setValue] = useState(0);
     const dispatch = useDispatch("")
     const MAX = 800
@@ -53,21 +54,22 @@ const FiltersWrapper = () => {
     }
 
   return (
-    <div className="flex flex-col items-start ">
-      <h2 className="font-semibold text-lg mb-2 filter-header">Price</h2>
+    <div className={`flex flex-col items-start  ${className}`}>
+      <h2 className="font-semibold sm:text-lg mb-2 filter-header">Price</h2>
       <div className="flex items-center gap-3">
-            <p>0</p>
+            <p className="text-sm">0</p>
             <input 
+            className="sm:w-auto w-1/2 "
             type="range" 
             min="0"
             max={MAX}
             onChange={(e) => setValue(e.target.value)}
             style={getBackgroundSize()}
             value={value} />
-            <p> {MAX} </p>
+            <p className="text-sm"> {MAX} </p>
       </div>
       <div className="flex justify-between w-1/2">
-        <h2 className="font-semibold text-lg my-4 filter-header">Categories</h2>
+        <h2 className="font-semibold text-sm sm:text-lg my-4 filter-header">Categories</h2>
         <button className="bg-transparent border-0 flex items-top py-1 px-1 text-slate-400" onClick={() => toggleVisibility("categories")}> ___  </button>
       </div>
         {
@@ -83,7 +85,7 @@ const FiltersWrapper = () => {
         }
 
       <div className="flex justify-between w-1/2">
-        <h2 className="font-semibold text-lg my-4 filter-header">Brands</h2>
+        <h2 className="font-semibold text-sm sm:text-lg my-4 filter-header">Brands</h2>
         <button className="bg-transparent border-0 flex items-top py-1 px-1 text-slate-400" onClick={() => toggleVisibility("brands")}> ___  </button>
       </div>
       {
@@ -101,7 +103,7 @@ const FiltersWrapper = () => {
 
       
     <div className="flex justify-between w-1/2">
-            <h2 className="font-semibold text-lg my-4 filter-header">Gender</h2>
+            <h2 className="font-semibold text-sm sm:text-lg my-4 filter-header">Gender</h2>
             <button className="bg-transparent border-0 flex items-top py-1 px-1 text-slate-400" onClick={() => toggleVisibility("genders")}> ___  </button>
         </div>        
         {
@@ -112,13 +114,13 @@ const FiltersWrapper = () => {
             <FilterCheckbox label="Child" />
           </>
         }
-        <h2 className="font-semibold text-lg my-4 filter-header">Reviews</h2>
+        <h2 className="font-semibold text-sm sm:text-lg my-4 filter-header">Reviews</h2>
         <FilterCheckbox label="4 and up" />
         <FilterCheckbox label="3 and up " />
         <FilterCheckbox label="2 and up" />
         <FilterCheckbox label="1 and up" />
         
-        <h2 className="font-semibold text-lg my-4 filter-header">Size</h2>
+        <h2 className="font-semibold text-sm sm:text-lg my-4 filter-header">Size</h2>
         <SizeBoxWrapper  setSelectedSize={handleSizeFilter}   sizeOptions={sizeOptions} sizes={sizes}/>
 
         <div className="mt-10"></div>
@@ -127,4 +129,7 @@ const FiltersWrapper = () => {
   )
 }
 
+FiltersWrapper.propTypes = {
+  className: PropTypes.string
+}
 export default FiltersWrapper
