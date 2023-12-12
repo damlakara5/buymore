@@ -18,10 +18,7 @@ const DB = process.env.DATABASE
 
 mongoose.connect(DB).then(con => { console.log("DB connection successfull")})
 
-const corsOptions = {
-    origin: 'http://127.0.0.1:5173', // your frontend origin
-    credentials: true, // to allow cookies to be sent
-}
+
 
 
 const app = express()
@@ -29,7 +26,7 @@ const port = 3000
 
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors(corsOptions))
+app.use(cors())
 app.use(express.static(path.join(__dirname,`public`))) 
 
 app.get("/", (req,res) => {
