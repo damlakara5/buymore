@@ -47,12 +47,19 @@ exports.login = async(req,res,next) => {
    try{
     const {email,password} = req.body
 
-      if(!email || !password) return next(new Error("Please provide email and password!"))
 
+      if(!email || !password) return res.status(401).json({
+        status: "failed",
+        message: "Please provide email and password!"
+      })
+    
       const user = await User.findOne({email}).select('+password')
 
 
-      if(!user || !user.correctPassword(password, user.password)) return next(new Error("Incorrect email or password"))
+      if(!user || !user.correctPassword(password, user.password)) return res.status(401).json({
+        status: "failed",
+        message: "Incorrect email or password"
+      })
 
       createSendToken(user, 200, req,res)
    }catch(e) {
