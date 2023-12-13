@@ -13,6 +13,7 @@ import ProductDetail from './pages/ProductDetail'
 import Overview2 from './pages/Overview-2'
 import ProtectedRoute from './ProtectedRoute'
 import Overview from './pages/Overview'
+import LoginSuccessPage from './pages/LoginSuccess'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
             </Route>
           </Route>
           <Route  path='/login' element={<Login />} />
+          <Route  path='/login-success' element={<LoginSuccessPage />} />
          
       </Routes>
     </>

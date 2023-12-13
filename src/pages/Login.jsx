@@ -2,7 +2,7 @@ import login from "../assets/img/login.jpg"
 import { FcGoogle } from "react-icons/fc";
 import "./Login.css"
 import { useDispatch, useSelector } from "react-redux";
-import { authLogin } from "../store/authSlice";
+import { authLogin, googleLogin } from "../store/authSlice";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -37,14 +37,14 @@ function Login() {
             <div className="col-span-3 bg-slate-100 ps-5 sm:px-36 flex flex-col items-center justify-center">
                 <h1 className="font-semibold text-base sm:text-base me-auto text-gray-600">Login to BuyMore</h1>
 
-                <button className="my-5 sm:text-base text-sm me-auto sm:px-2 sm:py-4 px-2 py-1 border-2 border-gray-200 flex items-center">Log in With Google <FcGoogle className="w-7 h-7 ms-3" /> </button>
+                <button onClick={() => googleLogin()} className="my-5 sm:text-base text-sm me-auto sm:px-5 sm:py-4 px-2 py-1 border-2 border-gray-200 flex items-center">Log in With Google <FcGoogle className="w-7 h-7 ms-3" /> </button>
                 <div className="mb-5 me-auto flex items-center">
                     <div className="sm:w-14 w-10 me-3 h-1 border-t-2 border-gray-400 "></div>
                     <p className="email-text sm:text-base text-xs  ">Or log in with email</p>
                     <div className="sm:w-14 w-10 ms-3 h-1 border-t-2 border-gray-400 "></div>
 
                 </div>
-                <form className=" flex flex-col gap-5 w-3/4 sm:w-full me-auto" onSubmit={handleLogin}>
+                <form className=" flex flex-col gap-5 w-3/4 lg:w-1/2 me-auto" onSubmit={handleLogin}>
                     <label className="flex flex-col text-start ">
                         Email
                         <input  required className="border outline-none rounded-2xl px-4 py-1" type="text" value={email} onChange={e => setEmail(e.target.value)} placeholder="Email" />

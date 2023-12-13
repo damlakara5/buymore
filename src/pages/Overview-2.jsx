@@ -19,6 +19,8 @@ const Overview2 = () => {
         dispatch(fetchAppleProducts())
      }, [dispatch])
 
+
+    
   return (
     <>
         <div className="relative">

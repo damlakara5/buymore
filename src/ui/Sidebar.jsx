@@ -5,9 +5,7 @@ import SidebarItem from "./SidebarItem";
 
 function Sidebar() {
     const userData = useSelector(state => state.auth.user)
-    
-
-   
+       
     return (
         <div className="">
             <div className="flex flex-col items-center">

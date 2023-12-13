@@ -90,7 +90,9 @@ export const updateUserInfo = createAsyncThunk("auth/updateUserInfo", async(payl
 
 })
 
-
+export const googleLogin = () => {
+    window.location.href = "https://buymore-lzh0.onrender.com/auth/google";
+}
 
 export const {logout} = authSlice.actions
 
