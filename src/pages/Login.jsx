@@ -53,7 +53,7 @@ function Login() {
                         Password
                         <input minLength={8} required className="border outline-none rounded-2xl px-4 py-1" type="password" value={password} onChange={e => setPassword(e.target.value)}  placeholder="Password" />
                     </label>
-                    <button type="submit" className="bg-blue-500 outline-0 text-white" > {loading === "pending" ? "Logging in" : "Log In"} </button>
+                    <button type="submit" className="bg-blue-500 rounded-2xl outline-0 text-white" > {loading === "pending" ? "Logging in" : "Log In"} </button>
                 {error && <p className="bg-red-200 text-red-600 px-3 py-1 rounded-md mt-8"> {error} </p>}
                 </form>
             </div>
