@@ -81,7 +81,7 @@ exports.getCheckoutSession = async(req,res,next) => {
        await Order.create({ products, user, totalAmount: price});
        await ShoppingCart.deleteMany({})
       
-        res.redirect("http://127.0.0.1:5173/profile/orders");
+        res.redirect("https://buymore-ten.vercel.app/profile/orders");
       };
 
 

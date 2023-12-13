@@ -99,5 +99,19 @@
             "photo": "https://reqres.in/img/faces/12-image.jpg",
             "password": "test1234",
             "phone" : "555 555 555"
+        },
+        {
+            "id": 13,
+            "email": "kdamla41@gmail.com",
+            "name":  "Damla Kara",
+            "password": "test1234",
+            "phone" : "555 555 555",
+            "googleId": "111095531801129387964",
+            "photo": "https://reqres.in/img/faces/12-image.jpg",
+            "address" : {
+                "city": "Ankara",
+                "country" : "Turkey",
+                "adressTitle": "Home"
+            }
         }
 ]

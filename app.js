@@ -11,6 +11,10 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const cookieParser = require("cookie-parser")
 const path = require("path")
+const passport = require('passport');
+const session = require('express-session');
+const GoogleStrategy = require('passport-google-oauth20').Strategy;
+
 
 dotenv.config({ path: './config.env' });
 
@@ -28,6 +32,34 @@ app.use(express.json())
 app.use(cookieParser())
 app.use(cors())
 app.use(express.static(path.join(__dirname,`public`))) 
+app.use(session({ secret: 'your_secret', resave: false, saveUninitialized: false }));
+
+// Initialize Passport and restore authentication state, if any, from the session
+app.use(passport.initialize());
+app.use(passport.session());
+// Passport session setup
+passport.serializeUser((user, done) => {
+    // Here, you can serialize user details into the session
+    done(null, user.id);
+  });
+
+  passport.deserializeUser((id, done) => {
+    // Retrieve the user details from the session
+    // User.findById(id, function(err, user) {
+    //   done(err, user);
+    // });
+    done(null, { id }); // Replace with actual user retrieval logic
+  });
+
+
+  // Configure the Google strategy for use by Passport
+passport.use(new GoogleStrategy({
+    clientID: '160210174677-03m6h9kuftl04gu9cqujabp35smqfgfu.apps.googleusercontent.com',
+    clientSecret: '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',
+    callbackURL: 'http://localhost:3000/auth/google/callback'
+  },
+  authController.googleAuth
+));
 
 app.get("/", (req,res) => {
     console.log("hello")
@@ -42,6 +74,15 @@ app.use("/order", ordersRouter)
 app.use("/cart", shoppingCartRouter)
 app.use("/reviews", reviewsRouter)
 
+
+app.get('/auth/google',
+  passport.authenticate('google', { scope: ['profile', 'email'] }));
+
+// Define the route for Google authentication callback
+app.get('/auth/google/callback', 
+  passport.authenticate('google', { failureRedirect: 'https://buymore-ten.vercel.app/login' }),
+  authController.googleLogin
+);
 
 const server = app.listen(port, () => {
     console.log("listening")

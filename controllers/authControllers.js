@@ -16,12 +16,12 @@ const createSendToken = (user,statusCode,req, res) => {
 
     try{
       const token = signToken(user._id)
-    const cookieOptions =  {
-      httpOnly: true,
-      secure: false,
-      sameSite: 'Strict'
-    }
-   
+      const cookieOptions =  {
+        httpOnly: true,
+        secure: false,
+        sameSite: 'Strict'
+      }
+    
     res.cookie('jwt', token, cookieOptions)
     //remove password from output
     user.password = undefined
@@ -132,3 +132,47 @@ exports.protect = async (req, res, next) => {
 
   next();
 };
+
+
+exports.googleAuth =  async (accessToken, refreshToken, profile, cb) => {
+  try{
+    
+      let user = await User.findOne({ googleId: profile.id });
+
+      if (!user) {
+        // If user does not exist, pass a special argument to indicate this
+        return cb(null, false, { message: 'No user found' });
+      }
+
+      const token = signToken(user._id);
+      user.token = token;
+
+
+      return cb(null, user);
+  }catch(e){
+      return cb(e, null);
+
+  }
+}
+
+exports.googleLogin = (req, res) => {
+  if (!req.user) {
+    // User not found, redirect to login page
+    return res.redirect('https://buymore-ten.vercel.app/login');
+  }
+
+  const token = signToken(req.user._id);
+
+  const user = {
+    id: req.user.id,
+    name: req.user.name,
+    email: req.user.email,
+    password: req.user.password,
+    address: req.user.address,
+    phone: req.user.phone,
+    photo: req.user.photo,
+  };
+
+  // Successful authentication, redirect to your desired page
+  res.redirect(`https://buymore-ten.vercel.app/login-success?token=${encodeURIComponent(token)}&user=${encodeURIComponent(JSON.stringify(user))}`);
+}
