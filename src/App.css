@@ -31,3 +31,13 @@ button, button:focus, button:focus-visible{
 .read-the-docs {
   color: #888;
 }
+
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: white;
+        color: black;
+    }
+    /* other styles for dark mode */
+}
