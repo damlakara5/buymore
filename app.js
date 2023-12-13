@@ -56,7 +56,7 @@ passport.serializeUser((user, done) => {
 passport.use(new GoogleStrategy({
     clientID: '160210174677-03m6h9kuftl04gu9cqujabp35smqfgfu.apps.googleusercontent.com',
     clientSecret: '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',
-    callbackURL: 'http://localhost:3000/auth/google/callback'
+    callbackURL: 'https://buymore-lzh0.onrender.com/auth/google/callback'
   },
   authController.googleAuth
 ));
