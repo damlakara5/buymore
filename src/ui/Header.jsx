@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import { logout } from "../store/authSlice";
 import { setSearch } from "../store/searchSlice"
 import { fetchProducts } from "../store/productsSlice";
+import MiniLoader from "./MiniLoader";
 
 function Header() {
 
@@ -18,7 +19,6 @@ function Header() {
     useEffect(() => {} , [total])
 
 
-    if(loading === "pending") return <p>Loading</p>
 
     const handleLogout = () => {
         dispatch(logout())
@@ -43,7 +43,8 @@ function Header() {
                 type="text"  
             />
             <div className="flex gap-2 sm:gap-5 items-center">
-                 <Link className="relative" to="/cart"><BsCart2 className="sm:w-5 sm:h-5  text-black"/> 
+                 <Link className="relative" to="/cart"><BsCart2 className="sm:w-5 sm:h-5  text-black"/>
+                    { loading ==="pending"  && <MiniLoader /> } 
                     {total !== 0 && <div className="absolute  bg-blue-600 top-[-17px] text-white px-2 rounded-full  right-[-15px]"> {total} </div> } </Link>
                  <Link to="/profile/wishlist"><BsHeart className="sm:w-5 sm:h-5 text-black"/></Link>
                 <button onClick={handleLogout} className="border-0 bg-transparent p-0"><BsArrowReturnRight className="sm:w-5 sm:h-5 text-black"/></button>
