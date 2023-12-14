@@ -21,7 +21,7 @@ const OrdersSchema = mongoose.Schema({
         ref: "User",
         type: mongoose.Schema.ObjectId
     },
-    totalAmount: {
+    total: {
         type: String
     },
     createdAt : {

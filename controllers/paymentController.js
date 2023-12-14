@@ -6,6 +6,7 @@ const Order = require("../models/OrdersModel")
 exports.getCheckoutSession = async(req,res,next) => {
     //Get the currently booked tour
     try{
+        console.log("hey2")
         const order = await ShoppingCart.findById(req.params.id)
         const price =  Number(req.body.total)
         //create checkout session

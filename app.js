@@ -24,13 +24,15 @@ mongoose.connect(DB).then(con => { console.log("DB connection successfull")})
 
 
 
-
 const app = express()
 const port = 3000
 
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors())
+app.use(cors({
+    origin: "https://buymore-ten.vercel.app",
+    credentials: true
+}))
 app.use(express.static(path.join(__dirname,`public`))) 
 app.use(session({ secret: 'your_secret', resave: false, saveUninitialized: false }));
 
@@ -54,8 +56,8 @@ passport.serializeUser((user, done) => {
 
   // Configure the Google strategy for use by Passport
 passport.use(new GoogleStrategy({
-    clientID: '160210174677-03m6h9kuftl04gu9cqujabp35smqfgfu.apps.googleusercontent.com',
-    clientSecret: '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',
+    clientID: process.env.GOOGLE_CLIENT_ID,
+    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     callbackURL: 'https://buymore-lzh0.onrender.com/auth/google/callback'
   },
   authController.googleAuth

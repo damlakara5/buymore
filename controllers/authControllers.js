@@ -95,6 +95,7 @@ exports.signup = async(req,res) => {
 
 exports.protect = async (req, res, next) => {
   // 1) Getting token and check of it's there
+  console.log("hey1")
   let token;
   if (
     req.headers.authorization &&
