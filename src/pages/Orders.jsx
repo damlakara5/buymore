@@ -6,6 +6,7 @@ import Modal from "../ui/Modal"
 import { OpenContext } from "../context/OrderModalContext"
 import { toast } from "react-toastify"
 import { changeStatus } from "../store/reviewSlice"
+import Loader from "../ui/Loader"
 
 function Orders() {
     const dispatch = useDispatch()
@@ -36,7 +37,7 @@ function Orders() {
     }
   }, [dispatch, setOpen,status, message])
 
-    if(loading === "pending") return <p>Loading</p>
+    if(loading === "pending") return <Loader />
     if(loading === "failed") return <p className="col-span-3"> {ErrorMessage} </p>
 
     return (
