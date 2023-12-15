@@ -8,7 +8,7 @@ function ProfileForm({header , data, handleSubmit}) {
     return (
         <div className='mb-10'>
             <h2 className='text-xl font-bold mb-3'> {header} </h2>
-            <form className="grid gap-4 w-1/2 ms-10" onSubmit={handleSubmit} >
+            <form className="grid gap-4 w-1/2 ms-10" >
                 {
                     data.map(el => <ProfileFormInput key={el.name} value={el.value} onChangeHandler={el.onChangeHandler} label={el.label} />)
                 }
