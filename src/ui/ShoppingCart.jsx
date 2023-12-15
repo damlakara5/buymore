@@ -20,7 +20,7 @@ function ShoppingCartWrapper({item, size, color}) {
                 <p className='text-sm text-slate-500 mt-3'>Size: {size} </p>
                 <p className='text-sm text-slate-500 mt-3'>Color: {color} </p>
             </div>
-            <div className='flex items-center gap-1 justify-center sm:m-0 my-5'>
+            <div className='flex items-center gap-1 justify-center sm:m-0 myr-5'>
                 <button className='border border-slate-300 py-0 px-2  outline-none ' disabled={item.quantity === 0} onClick={() => dispatch(decreaseQuantity({id:item.product._id, size}))} >-</button>
                 <p> {item.quantity} </p>
                 <button className='border border-slate-300 py-0 px-2 outline-none' onClick={() => dispatch(increaseQuantity({id:item.product._id, size}))} >+</button>

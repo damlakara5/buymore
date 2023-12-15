@@ -56,6 +56,9 @@ function ProductDetail() {
             dispatch(fetchProducts())
             
         }
+        if (product?.images?.length > 0) {
+            setDisplayedImg(product.images[0]);
+        }
     }, [dispatch, product]); // Dependencies: dispatch and product
 
 
