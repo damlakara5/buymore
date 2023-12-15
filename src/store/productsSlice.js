@@ -37,8 +37,7 @@ const productsSlice = createSlice({
             state.loadingProductDetail = "pending";
         }),
         builder.addCase(fetchFavs.fulfilled, (state,action) => {
-            console.log(action.payload.data)
-            state.favs = action.payload.data.map(product => product.product)
+            state.favs = action.payload.map(product => product.product)
         }),
         builder.addCase(fetchFavs.rejected, (state,action) => {
             state.status = "failed"

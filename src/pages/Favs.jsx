@@ -17,7 +17,7 @@ function Favs() {
 
 
     useEffect(() => {        
-        
+        console.log(favs)
     }, [favs])
 
     if(status === "failed") return <p className="col-span-3"> {message} </p>
