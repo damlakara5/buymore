@@ -5,6 +5,7 @@ import { getCart } from "../store/shoppingCartSlice"
 import ShoppingCartWrapper from "../ui/ShoppingCart"
 import { NavLink } from "react-router-dom"
 import { BsCart2 } from "react-icons/bs";
+import Loader from "../ui/Loader"
 
 function ShoppingCart() {
 
@@ -20,7 +21,7 @@ function ShoppingCart() {
         console.log(products)
     } , [products])
 
-    if(loading === "pending") return <p>Loading</p>
+    if(loading === "pending") return <Loader />
 
     
     return (
