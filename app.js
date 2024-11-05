@@ -30,7 +30,7 @@ const port = 3000
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "https://buymore-ten.vercel.app",
+    origin: "https://buymore-lzh0.onrender.com/l",
     credentials: true
 }))
 app.use(express.static(path.join(__dirname,`public`))) 
