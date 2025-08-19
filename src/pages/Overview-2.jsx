@@ -33,18 +33,19 @@ const Overview2 = () => {
         </div>
 
         <div className="grid md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-2 my-10 gap-8 md:mx-0 mx-5">
-            <div className="relative">
-                <h2 className="text-xl font-bold absolute left-5 text-black top-10 "> 
-                    <Link to={`/products?category=electronics`} className="animated-hover text-slate-800 animated-hover_black hover:text-black">Electronics</Link>
-                    <p className="text-sm">Mac, watches, Aplle TV and more</p>
+            <div className="relative min-w-0">
+                <h2 className="text-xl font-bold absolute left-5 text-black top-10">
+                <Link to="/products?category=electronics" className="animated-hover text-slate-800 animated-hover_black hover:text-black">Electronics</Link>
+                <p className="text-sm">Mac, watches, Apple TV and more</p>
                 </h2>
-                <img className="h-full md:w-auto " src={pc} />
+                <img className="w-full block md:w-auto md:h-full" src={pc} alt="Electronics" />
             </div>
-            <div className="relative rounded-3xl  ">
-                <h2 className="text-xl font-bold absolute left-5 text-black top-10 "> 
-                    <Link to={`/products?category=women`} className="animated-hover text-slate-800 animated-hover_black hover:text-black">Women Collection  </Link>
+
+            <div className="relative rounded-3xl overflow-hidden min-w-0">
+                <h2 className="text-xl font-bold absolute left-5 text-black top-10">
+                <Link to="/products?category=women" className="animated-hover text-slate-800 animated-hover_black hover:text-black">Women Collection</Link>
                 </h2>
-                <img className="rounded-3xl object-cover h-full" src={womenCollection} />
+                <img className="w-full block object-cover object-center" src={womenCollection} alt="Women Collection" />
             </div>
             <div className="relative rounded-3xl   ">
                 <h2 className="text-xl font-bold absolute left-20 text-black top-10 "> 
